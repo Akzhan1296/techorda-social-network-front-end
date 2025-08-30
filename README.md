@@ -54,6 +54,36 @@ Currently, two official plugins are available:
 - Node.js версии 18.x или выше
 - npm или yarn
 
+
+
+## 🖥️ Backend
+
+Для работы frontend-приложения используется отдельный backend:  
+🔗 [TechOrda Social Network Backend](https://github.com/Akzhan1296/techorda-social-network-back-end)
+
+### ⚙️ Технологический стек backend
+- **Node.js** + **TypeScript**
+- **NestJS** — серверный фреймворк
+- **TypeORM** — ORM для работы с базой данных
+- **PostgreSQL** — основная база данных
+- **NeonDB** — удалённый хостинг PostgreSQL
+
+Backend реализует REST API, с которым взаимодействует frontend.  
+
+## 🚀 Технологический стек Frontend
+- **React** + **TypeScript**
+- **Vite** — сборка проекта
+- **Tailwind CSS** — стилизация
+- **React Router** — маршрутизация
+- **Axios** — работа с API
+
+## 🚀 Архитектура проекта
+flowchart TD
+    A[👩‍💻 Пользователь] -->|запрос| B[🌐 Frontend<br/>React + Vite + TS + Tailwind]
+    B -->|REST API| C[⚙️ Backend<br/>Node.js + NestJS + TypeScript]
+    C -->|ORM| D[(🗄️ PostgreSQL<br/>NeonDB)]
+
+
 ### Установка
 
 1. Клонируйте репозиторий:
